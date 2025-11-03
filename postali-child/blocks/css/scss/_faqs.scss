@@ -1,0 +1,97 @@
+.page-template-ppc-block {
+    .body-container {
+        #accordions-block {
+            .columns {
+                .column-full {
+                    text-align: center;
+                }
+            }
+            
+            .accordions {
+                width: 100%;
+                position: relative;
+                padding-left: 0;
+                margin-bottom: 0;
+                background: none !important;
+                border-bottom: solid 1px #0D2844;
+                padding:30px;
+                transition:.25s ease all;
+                box-sizing: border-box;
+    
+                .accordions_title {
+                    border: none;
+                    padding:0;
+                    height: auto;
+                    background: none;
+    
+                    span {
+                        &::after {
+                            top: 37px !important;
+                            right: 40px !important;
+                            position: absolute;
+                            font-weight: 500;
+                            font-size: 50px;
+                            color:$dkblue;
+
+                            @include respond(phone) {
+                                top:30px !important;
+                            }
+                        }
+                    }
+    
+                    h3 {
+                        font-size: 34px !important;
+                        color:$dkblue;
+                        font-weight: 600 !important;
+
+                        @include respond(phone) {
+                            font-size: 24px !important;
+                        }
+                    }
+    
+                    &.active {
+                        background-color: $white;
+                        border-bottom: none;
+                        
+                        h3 {
+                            text-decoration: underline;
+                            color:inherit;
+                        }
+                    }
+    
+                    span::after {
+                        top: 27px;
+                    }
+                }
+    
+                .accordions_content {
+                    padding:0;
+                    
+                    p {
+                        margin-top: 20px;
+                        margin-bottom: 0;
+                        max-width: 85%;
+                    }
+                }
+    
+                .column-66 {
+                    @include respond(tab-land) {
+                        width: 100%;
+                    }
+                }
+    
+                &.active,
+                &:hover {
+                    background:$white !important;
+                }
+    
+                &.active {
+                    border-bottom: none;
+                }
+            }
+
+        }
+    }
+}
+
+

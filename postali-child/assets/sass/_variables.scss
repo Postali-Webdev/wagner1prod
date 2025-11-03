@@ -1,0 +1,295 @@
+/**
+ * Sass variables and functions.
+ *
+ * @package Postali Child
+ * @author Postali LLC
+ */
+
+// Breakpoints
+// $screen-xxxl: 1920px;
+// $screen-xxl: 1640px;
+// $screen-xl: 1400px;
+// $screen-lg: 1200px;
+// $screen-ipad: 1024px;
+// $screen-md: 992px;
+// $screen-sm: 768px;
+// $screen-xs: 667px;
+// $screen-xxs: 480px;
+// $screen-xxxs: 360px;
+
+$desktop-full: 1920px;
+$desktop-lg: 1400px;
+$desktop: 1200px;
+$tab-land: 1024px;
+$tab-port: 820px;
+$phone-lg: 667px;
+$phone: 600px;
+
+// Containers
+$container-max-width: $desktop-lg;
+$container-padding:30px;
+
+// Transitions
+$transition-speed:.3s;
+$transition-fast:.3s ease-in-ease-out;
+$transition-slow:.5s ease-in-ease-out;
+
+// Core Colors
+$blk: #000000;
+$grey: #707070;
+$ltgrey: #F0F2F5;
+$white: #FFFFFF;
+$dknavy: #061A2F;
+$navy: #0D2844;
+$dkblue: #143D67;
+$blue: #265DE1;
+$yellow: #FFCB47;
+$ltyellow: #FFCB47B3;
+$softyellow: #ffe9b0;
+
+
+// Link Attributes
+// $link-color: $lt-red;
+// $link-hover-color: $grey;
+$link-transition-speed: .15s;
+$trans: 0.3s linear;
+
+
+@font-face {
+    font-family: "Kanit";
+    src: url('/wp-content/themes/postali-child/assets/fonts/kanit/Kanit-Thin.woff2') format('woff2');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Kanit";
+    src: url('/wp-content/themes/postali-child/assets/fonts/kanit/Kanit-ExtraLight.woff2') format('woff2');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Kanit";
+    src: url('/wp-content/themes/postali-child/assets/fonts/kanit/Kanit-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Kanit";
+    src: url('/wp-content/themes/postali-child/assets/fonts/kanit/Kanit-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Kanit";
+    src: url('/wp-content/themes/postali-child/assets/fonts/kanit/Kanit-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Kanit";
+    src: url('/wp-content/themes/postali-child/assets/fonts/kanit/Kanit-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Kanit";
+    src: url('/wp-content/themes/postali-child/assets/fonts/kanit/Kanit-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Kanit";
+    src: url('/wp-content/themes/postali-child/assets/fonts/kanit/Kanit-ExtraBold.woff2') format('woff2');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Kanit";
+    src: url('/wp-content/themes/postali-child/assets/fonts/kanit/Kanit-Black.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Kanit";
+    src: url('/wp-content/themes/postali-child/assets/fonts/kanit/Kanit-ThinItalic.woff2') format('woff2');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Kanit";
+    src: url('/wp-content/themes/postali-child/assets/fonts/kanit/Kanit-ExtraLightItalic.woff2') format('woff2');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Kanit";
+    src: url('/wp-content/themes/postali-child/assets/fonts/kanit/Kanit-LightItalic.woff2') format('woff2');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Kanit";
+    src: url('/wp-content/themes/postali-child/assets/fonts/kanit/Kanit-Italic.woff2') format('woff2');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Kanit";
+    src: url('/wp-content/themes/postali-child/assets/fonts/kanit/Kanit-MediumItalic.woff2') format('woff2');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Kanit";
+    src: url('/wp-content/themes/postali-child/assets/fonts/kanit/Kanit-SemiBoldItalic.woff2') format('woff2');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Kanit";
+    src: url('/wp-content/themes/postali-child/assets/fonts/kanit/Kanit-BoldItalic.woff2') format('woff2');
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Kanit";
+    src: url('/wp-content/themes/postali-child/assets/fonts/kanit/Kanit-ExtraBoldItalic.woff2') format('woff2');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Kanit";
+    src: url('/wp-content/themes/postali-child/assets/fonts/kanit/Kanit-BlackItalic.woff2') format('woff2');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Merriweather Sans";
+    src: url('/wp-content/themes/postali-child/assets/fonts/merriweather-sans/MerriweatherSans-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Merriweather Sans";
+    src: url('/wp-content/themes/postali-child/assets/fonts/merriweather-sans/MerriweatherSans-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Merriweather Sans";
+    src: url('/wp-content/themes/postali-child/assets/fonts/merriweather-sans/MerriweatherSans-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Merriweather Sans";
+    src: url('/wp-content/themes/postali-child/assets/fonts/merriweather-sans/MerriweatherSans-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Merriweather Sans";
+    src: url('/wp-content/themes/postali-child/assets/fonts/merriweather-sans/MerriweatherSans-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Merriweather Sans";
+    src: url('/wp-content/themes/postali-child/assets/fonts/merriweather-sans/MerriweatherSans-ExtraBold.woff2') format('woff2');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Merriweather Sans";
+    src: url('/wp-content/themes/postali-child/assets/fonts/merriweather-sans/MerriweatherSans-LightItalic.woff2') format('woff2');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Merriweather Sans";
+    src: url('/wp-content/themes/postali-child/assets/fonts/merriweather-sans/MerriweatherSans-Italic.woff2') format('woff2');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Merriweather Sans";
+    src: url('/wp-content/themes/postali-child/assets/fonts/merriweather-sans/MerriweatherSans-MediumItalic.woff2') format('woff2');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Merriweather Sans";
+    src: url('/wp-content/themes/postali-child/assets/fonts/merriweather-sans/MerriweatherSans-SemiBoldItalic.woff2') format('woff2');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Merriweather Sans";
+    src: url('/wp-content/themes/postali-child/assets/fonts/merriweather-sans/MerriweatherSans-BoldItalic.woff2') format('woff2');
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Merriweather Sans";
+    src: url('/wp-content/themes/postali-child/assets/fonts/merriweather-sans/MerriweatherSans-ExtraBoldItalic.woff2') format('woff2');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Icomoon";
+    src: url('/wp-content/themes/postali-child/assets/fonts/icomoon.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+
+// Typography
+$kanit: 'Kanit', sans-serif;
+$merriweather: "Merriweather Sans", sans-serif;
+$icomoon: 'Icomoon';
+
+// $body-font-family: $overpass;
+// $body-text-color: $dk-blue;
+$body-line-height: 130%;
+
+// Font Weight
+$light: 100;
+$thin: 200;
+$normal: 400;
+$medium: 500;
+$semi-bold: 600;
+$bold: 700; 
+$black: 900;

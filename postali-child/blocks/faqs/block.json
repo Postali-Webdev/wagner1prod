@@ -1,0 +1,15 @@
+{
+    "name": "acf/faqs",
+    "title": "PPC FAQs Block",
+    "description": "FAQs block using ACF fields.",
+    "category": "formatting",
+    "icon": "admin-comments",
+    "keywords": ["faqs"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "faqs.php"
+    },
+    "supports": {
+        "anchor": true
+    }
+}

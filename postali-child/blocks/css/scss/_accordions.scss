@@ -1,0 +1,164 @@
+.accordions {
+    width:100%;
+    background:$white;
+    margin-bottom: 20px;
+
+    &_title  {
+		display: flex;
+		background-color: none;
+		cursor: pointer;
+		padding: 26px 8%;
+		transition: 0.3s linear;
+		text-align: left;
+		align-items: center;
+		line-height: 100%;
+        position: relative;
+        border-right:50px solid $blk;
+
+        @include respond(tab-port) {
+            border-right:50px solid $blk;
+        }
+
+        @include respond(phone) {
+            padding: 22px 6%;
+        }
+
+        &:first-of-type {
+            &::before {
+                border-top: none;
+            }
+        }
+
+        &::before {
+            content:"";
+            height:1px;
+            width:80%;
+            left:5%;
+            position: absolute;
+            border-top: 1px solid $blk;
+            top:0;
+        }
+
+        &::after {
+            content:"";
+            height:1px;
+            width:80px;
+            right:-80px;
+            position: absolute;
+            border-top: 1px solid $grey;
+            top:0;
+
+            @include respond(tab-port) {
+                width:50px;
+                right:-50px;
+            }
+        }
+
+        h2,
+        h3,
+        h4 {
+            font-size:18px;
+            font-weight:400;
+            color:$blk;
+            transition:$trans;
+            margin-bottom:0 !important;
+            margin-top:0 !important;
+            font-size:24px;
+            font-weight:700;
+			font-family: $sans;
+
+            @include respond(tab-port) {
+                max-width: 95%;
+            }
+
+            @include respond(phone) {
+                font-size: 18px;
+            }
+        }
+
+        span {
+            position: absolute;
+            right: 0;
+            background: $green;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+            transform: translate(50%, -50%);
+            top: 50%;
+
+            @include respond(tab-port) {
+                right:0;
+            }
+
+            @include respond(phone) {
+                height:50px;
+                width:50px;
+            }
+
+            &:after {
+                content: "\e906";
+                font-family: $icomoon;
+                display: inline-block;
+                transition:$trans;
+                font-size:16px;
+                position: relative;
+                color:$blk;
+                font-size:22px;
+                rotate: 45deg;
+            }
+        }
+        
+        &.active {
+            border-right: 50px solid $blk;
+
+            @include respond(tab-port) {
+                border-right: 50px solid $blk;
+            }
+
+            span {
+                &:after {
+                    transform: rotate(45deg);
+                }
+            }
+        }
+    }
+
+    &_content {
+        display: none;
+		padding: 0 8% 10px;
+		text-align: left;
+        border-right:50px solid $blk;
+
+        @include respond(tab-port) {
+            border-right: 50px solid $blk;
+        }
+
+		.headline {
+			color: $blk;
+			font-size: 32px;
+			margin-bottom: 20px;
+			display: block;
+			font-family:$sans;
+			font-weight: 700;
+		}
+
+        p {
+            color:$blk;
+        }
+
+        ul {
+            color:$blk;
+        }
+
+        a {
+            color:inherit;
+            position: relative;
+            text-decoration: underline;
+
+            @include swipe;
+        }
+    }
+}

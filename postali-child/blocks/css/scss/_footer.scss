@@ -1,0 +1,126 @@
+.page-template-ppc-block {
+    .body-container {
+        .footer {
+            background: #2A3B49;
+
+            .pre-headline {
+                color:#80be41;
+                margin-top: 0 !important;
+            }
+
+            .headline {
+                color:white;
+            }
+
+            p {
+                color: white;
+            }
+
+            .gform_wrapper {
+                .gfield_label,
+                label.gform-field-label.gform-field-label--type-sub {
+                    color: white;
+                }
+
+                textarea {
+                    width: 100% !important;
+                    max-width: 100% !important;
+                }
+
+                label {
+                    color:white;
+                }
+
+                .gform_footer.top_label {
+                    display: block;
+                    margin-top: 20px !important;
+                }
+
+                input[type=submit] {
+                    width: 100% !important;
+                    font-size: 18px;
+                    border: none;
+                    padding: 11px;
+                    box-sizing: border-box;
+                    margin-top: 20px !important;
+                    position: relative;
+                    display: block;
+                    color: white;
+                    background-color: #80be41 !important;
+                }
+                .gform-theme--foundation .gform_fields {
+                    row-gap: 20px !important;
+                }
+                
+                textarea {
+                    width: 100% !important;
+                    max-width: 100% !important;
+                }
+
+                label.gfield_label.gform-field-label,
+                legend.gfield_label.gform-field-label.gfield_label_before_complex {
+                    font-weight: bold;
+                }
+
+                .gform_footer.top_label {
+                    display: block;
+                    margin-top: 20px !important;
+                }
+
+                input[type=submit] {
+                    width: 100% !important;
+                    font-size: 18px;
+                    border: none;
+                    padding: 11px;
+                    box-sizing: border-box;
+                    margin-top: 20px !important;
+                    position: relative;
+                    display: block;
+                    color: white;
+                    background-color: #80be41 !important;
+                }
+
+                input[type="checkbox"].gfield-choice-input {
+                    box-sizing: border-box;
+                    padding: 0;
+                    content: '';
+                    margin-right: 0;
+                    display: inline-block;
+                    vertical-align: text-top;
+                    cursor: pointer;
+                    z-index: 2;
+                    opacity: 1;
+                    visibility: visible;
+                    display: inline;
+                    position: relative;
+                    left: 0;
+                    margin-top: 0px !important;
+                }
+
+                input[type="checkbox"].gfield-choice-input:before {
+                    content: '';
+                    margin-right: 0px;
+                    display: inline-block;
+                    vertical-align: text-top;
+                    width: 18px !important;
+                    height: 18px !important;
+                    background: white;
+                    border: 3px solid #80be41 !important;
+                    position: absolute !important;
+                    left: 0px;
+                    top: 0px;
+                    z-index: 8;
+                    visibility: visible;
+                    display: block;
+                }
+                    
+            }
+
+            .column-66 {
+                @include respond(tab-port) {
+                    width:100%;
+                }
+            }
+        }
+    }
+}

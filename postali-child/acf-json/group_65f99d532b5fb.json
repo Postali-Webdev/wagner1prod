@@ -1,0 +1,116 @@
+{
+    "key": "group_65f99d532b5fb",
+    "title": "Testimonials",
+    "fields": [
+        {
+            "key": "field_6620026a79a28",
+            "label": "Intro Copy (Optional)",
+            "name": "intro_copy",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "Use this field when adding Testimonials to Category pages. This field will show as the large yellow copy on the left of the featured Testimonials block.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "rows": "",
+            "placeholder": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_65f99d538469e",
+            "label": "Copy",
+            "name": "copy",
+            "aria-label": "",
+            "type": "wysiwyg",
+            "instructions": "Add entire Testimonial copy here",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "basic",
+            "media_upload": 0,
+            "delay": 0
+        },
+        {
+            "key": "field_65f99fef8469f",
+            "label": "Author",
+            "name": "author",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_65f9a010846a0",
+            "label": "Source",
+            "name": "source",
+            "aria-label": "",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "google": "Google",
+                "facebook": "Facebook",
+                "avvo": "Avvo",
+                "yelp": "Yelp",
+                "lawyerscom": "lawyers.com",
+                "unknown": "Unknown"
+            },
+            "default_value": "",
+            "return_format": "value",
+            "allow_null": 0,
+            "other_choice": 0,
+            "layout": "vertical",
+            "save_other_choice": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "testimonials"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content"
+    ],
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1713373906
+}

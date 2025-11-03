@@ -1,0 +1,295 @@
+/**
+ * Web Font Styles, H Styles, Body Text Styles
+ *
+ * @package Postali Child
+ * @author Postali LLC
+**/
+
+/* Fonts */
+h1, h2, h3, h4, h5, h6, p, a, ul {
+    margin-bottom: 20px !important;
+} 
+ol {
+    margin-left: 0 !important;
+    margin-bottom: 20px !important;
+    li {
+        font-family: $merriweather;
+        font-size: 16px !important;
+        line-height: 28px !important;
+        margin-left: 0;
+        padding-left: 0px;
+        position: relative;
+        font-weight: 100;
+        color: $navy;
+    }
+}
+ul li, ol li {
+    margin: 0 0 0 20px;
+    font-size: 18px;
+    color: $navy;
+}
+
+a:not(.btn):not(.btn-fill) {
+    text-decoration: underline;
+    -webkit-transition:$trans;
+    transition:$trans;
+    font-family: $merriweather;
+    font-weight: $normal;
+    color: $navy;
+    &:hover {
+        color:$blue;
+        text-decoration:none;
+    }
+}
+
+.btn {
+    display:inline-block;
+    padding:12px 30px;
+    background-color:$yellow;
+    text-decoration:none;
+    color:$navy;
+    border:2px solid $yellow;
+    transition:$trans;
+    font-family: $merriweather;
+    font-size: 14px !important;
+    font-weight: $bold;
+    letter-spacing: 0.99px;
+    text-transform: uppercase;
+    &:hover {
+        background-color: $softyellow;
+        color: $navy;
+    }
+}
+.btn-fill {
+    display:inline-block;
+    padding:12px 30px;
+    text-decoration:none;
+    color:$navy;
+    border:2px solid $yellow;
+    transition:$trans;
+    font-family: $merriweather;
+    font-size: 14px !important;
+    font-weight: $bold;
+    position: relative;
+    transition: background-position 0.5s;
+    text-transform: uppercase;
+    text-decoration: none !important; 
+    letter-spacing: 0.99px !important;
+    span {
+        position: relative;
+        z-index: 1;
+        font-family: $merriweather;
+        color: $navy;
+        font-weight: $bold;
+        text-transform: uppercase;
+        font-size: 14px;
+        letter-spacing: 0.99px !important;
+    }
+    &:before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 5px;
+        background-color: $yellow;
+        transition: height 0.5s;
+        z-index: 0;
+    }
+    &:hover {
+        color: $navy;
+        &:before {
+            height: 100%;
+        }
+    }
+}
+
+p {
+    font-size:16px;
+    font-weight:$light;
+    margin-bottom:30px;
+    font-family: $merriweather;
+    letter-spacing: 0.32px;
+    line-height: 28px;
+    color: $navy;
+}
+
+h1 {
+    font-family: $kanit;
+    font-size: 60px;
+    font-weight: $bold;
+    text-transform: uppercase;
+    letter-spacing: 1.75px;
+    line-height: 60px;
+    color: $navy;
+    @include respond(phone-lg) {
+        font-size: 40px;
+        line-height: 41px;
+    }
+}
+
+h2, h2 a {
+    font-family: $kanit !important;
+    font-size: 45px;
+    font-weight: $bold !important;
+    text-transform: uppercase;
+    letter-spacing: 0.55px;
+    line-height: 55px;
+    color: $navy !important;
+    @include respond(phone) {
+        font-size: 32px;
+        line-height: 38px;
+    }
+}
+
+h3 {
+    font-family: $kanit; 
+    font-size: 30px;
+    line-height: 40px;
+    letter-spacing: 0.88px;
+    font-weight: $semi-bold !important;
+    color: $navy;
+    @include respond(phone) {
+        font-size: 25px;
+        line-height: 35px;
+    }
+}
+
+h4 {
+    font-family: $kanit;
+    font-weight: $medium !important;
+    font-size: 20px;
+    letter-spacing: 2.2px;
+    color: $blue;
+    padding-top: 5px !important;
+ }
+
+.thin-subtitle {
+    font-size: 20px;
+    font-weight: $light;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    margin-bottom: 5px !important;
+    font-family: $merriweather;
+    color: $navy;
+    @include respond(phone-lg) {
+        font-size: 16px;
+    }
+}
+
+.blue-subtitle, .blue-subtitle p {
+    color: $blue;
+    text-transform: uppercase;
+    font-family: $kanit;
+    font-weight: $medium;
+    letter-spacing: 2.2px;
+    font-size: 20px;
+}
+
+.yellow-subtitle {
+    color: $yellow !important;
+    text-transform: uppercase;
+    font-family: $kanit;
+    font-weight: $medium;
+    letter-spacing: 2.2px;
+    font-size: 20px;
+}
+
+.large-yellow-subtitle {
+    color: $yellow;
+    text-transform: uppercase;
+    font-family: $kanit;
+    font-weight: $bold;
+    letter-spacing: 5.5px;
+    font-size: 70px;
+    line-height: 75px;
+    margin-top: 100px;
+    margin-bottom: 30px !important;
+    @include respond(tab-land) {
+        margin-top: 30px;
+        font-size: 50px;
+        line-height: 55px;
+    }
+}
+
+.social {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    background: $blue;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:before {
+        font-family: $icomoon;
+        position: relative;
+        font-size: 16px;
+    }
+    &.facebook {
+        &:before {
+            content: "\ea90";
+        }
+    }
+    &.linkedin {
+        &:before {
+            content: "\eaca";
+        }
+    }
+    &.youtube {
+        &:before {
+            content: "\ea9d";
+        }
+    }
+    &.twitter {
+        &:before {
+            content: "\e905";
+            font-size: 22px;
+        }
+    }
+    &.share-link {
+        &:before {
+            content: "\ea82";
+        }
+    }
+}
+
+ul:not(.menu):not(.sub-menu):not(.pagination) {
+    list-style-type: none;
+    li {
+        font-family: $merriweather;
+        font-size: 16px;
+        line-height: 28px;
+        margin-left: 0;
+        padding-left: 20px;
+        position: relative;
+        font-weight: $light;
+        &:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 8px;
+            height: 8px;
+            width: 8px;
+            border: solid 2px $yellow;
+            display: block;
+            background: rgb(255, 255, 255);
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0) 48%, rgba(255, 203, 71, 1) 48%);
+        }
+    }
+}
+
+.shadowed-text {
+    text-shadow: 1px 1px $white;
+    display: block;
+    line-height: 100%;
+}
+
+.star-rating {
+    display: block;
+    width: fit-content;
+    background: $yellow;
+    color: $navy;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+}

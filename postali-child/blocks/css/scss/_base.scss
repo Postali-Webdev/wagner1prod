@@ -1,0 +1,121 @@
+.page-template-ppc-block {
+
+    header {
+        height:95px !important;
+
+        a.btn.mobile-btn {
+            display: none !important;
+        }
+    }
+
+    #header-top_right,
+    #apexchat_prechat_invitation_frame,
+    div#apexchat_bar_invitation_wrapper,
+    div#apexchat_prechat_invitation_wrapper,
+    footer {
+        display: none !important;
+    }
+
+    .body-container {
+        margin-left: 0 !important;
+
+        section {
+            padding:80px 0;
+
+            &:last-of-type {
+                padding:25px 0;
+                 
+                p {
+                    margin-bottom: 0 !important;
+                }
+            }
+
+            @include respond(phone) {
+                padding:50px 0;
+            }
+            
+            .container {
+                width: 100%;
+                max-width: 1600px;
+                margin: 0 auto;
+                padding: 0 50px;
+                box-sizing: border-box;
+
+                @media screen and (max-width:820px) {
+                    padding:0 35px;
+                }
+
+                .columns {
+                    p {
+                        font-size: 18px !important;
+                        line-height: 145% !important;
+
+                        &.accent {
+                            color:$ltblue;
+                            font-weight: 600 !important;
+                            letter-spacing: 2px;
+                        }
+                    }
+
+                    h3 {
+                        color:$ltblue;
+                        font-weight: 400 !important;
+                        font-size: 28px !important;
+                    }
+
+                    .column-50,
+                    .column-66,
+                    .column-33 {
+                        @include respond(tab-port) {
+                            padding:0;
+                        }
+                    }
+                }
+
+                .columns {
+                
+                    h1,
+                    .headline {
+                        font-family: "Kanit",sans-serif;
+                        font-size: 3em;
+                        line-height: 115%;
+                        margin-top: 5px;
+
+                        @include respond(phone) {
+                            font-size: 2.5em;
+                        }
+                    }
+                }
+            }
+
+            .ppc-cta-block {
+                font-weight: bold;
+            }
+        
+            .btn {
+                display: inline-flex;
+                padding: 16px 60px !important;
+                text-decoration: none !important;
+                font-size: 16px !important;
+                transition: 0.2s ease all;
+                font-weight: bold !important;
+                height: auto;
+                align-items: center;
+                margin-top: 0 !important;
+                color: $dkblue !important;
+                transition: 0.2s ease all;
+                width: auto !important;
+                background: $yellow;
+                white-space: nowrap;
+
+                &:hover {
+                    background: #2A3C49;
+                }
+
+                @media screen and (max-width:820px) {
+                    margin-bottom: 15px !important;
+                }
+            }            
+        }
+    }
+}

@@ -1,0 +1,200 @@
+/**
+ * Footer Styles
+ *
+ * @package Postali Child
+ * @author Postali LLC
+**/
+
+footer {
+    padding-bottom: 30px !important;
+    .custom-logo-link {
+        display: block;
+        margin: 50px 0 20px 0;
+        @include respond(tab-port) {
+            margin: 50px auto 20px auto;
+            width: fit-content;
+        }
+        img {
+            max-width: 300px;;
+        }
+    }
+    section {
+        padding: 0;
+    }
+    background: $navy;
+    a {
+        color: $white;
+    }
+    p {
+        color: $white;
+        @include respond(tab-port) {
+            text-align: center;
+        }
+        &.footer-copy {
+            font-size: 14px;
+            line-height: 22px;
+        }
+        &.yellow-title {
+            margin-bottom: 5px !important;
+            font-weight: $medium !important;
+        }
+    }
+    .menu {
+        list-style-type: none;
+        margin: 0;
+        li {
+            padding: 0;
+            margin: 0;
+            margin-bottom: 5px;
+            @include respond(tab-port) {
+                text-align: center;
+            }
+            a {
+                color: $white !important;
+                font-weight: $medium !important;
+                font-family: $kanit !important;
+                text-transform: uppercase;
+                font-size: 16px;
+                letter-spacing: 0.16px;
+                text-decoration: none !important;
+                line-height: 125% !important;
+                &:hover {
+                    text-decoration: underline !important;
+                }
+            }
+        }
+        &#menu-footer-other-links {
+            li {
+                a {
+                    font-size: 18px;
+                    font-weight: $bold;
+                    color: $yellow !important;
+                    letter-spacing: 0.99px;
+                    text-decoration: none !important;
+                    &:hover {
+                        text-decoration: underline !important;
+                    }
+                }
+            }
+        }
+    }
+    .block-wrapper {
+        max-width: 500px;
+        @include respond(tab-port) {
+             max-width: 100%;
+        }
+        .contact-block-wrapper {
+            background: $dknavy;
+            padding: 50px;
+            @include respond(tab-port) {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            a {
+                display: block;
+                font-size: 18px;
+                margin-bottom: 5px;
+                font-family: $kanit;
+                color: $white;
+                text-decoration: none;
+                &:hover {
+                    text-decoration: underline;
+                }
+                &.directions-link {
+                    color: $white;
+                    text-transform: uppercase;
+                    font-family: $merriweather;
+                    font-size: 14px;
+                    text-decoration: underline;
+                    letter-spacing: 0.28px;
+                    margin-top: 10px;
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+            }
+            p {
+                font-family: $kanit;
+                font-weight: $bold;
+                text-transform: uppercase;
+                line-height: 24px;
+            }
+            p, a {
+                text-align: right;
+                @include respond(tab-port) {
+                    text-align: center;
+                }
+            }
+            iframe {
+                width: -webkit-fill-available;
+                width: -moz-available;
+                max-width: 400px;
+                max-height: 300px;
+                margin: 20px 0 20px auto;
+                display: block;
+                @include respond(tab-port) {
+                    margin: 20px auto;
+                }
+            }
+            .footer-social {
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                gap: 1em;
+                a {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: $yellow;
+                    height: 30px;
+                    width: 30px;
+                    border-radius: 50%;
+                    color: $dknavy;
+                    &:hover {
+                        text-decoration: none;
+                        background-color: $white;
+                    }
+                    span {
+                     &:before {
+                        color: $dknavy;
+                        font-size: 30px;
+                     }   
+                    }
+                }
+            }
+        }
+        .footer-disclaimer {
+            font-size: 10px;
+            line-height: 18px;
+            text-align: right;
+            letter-spacing: 0.28px;
+            @include respond(tab-port) {
+                text-align: center;
+            }
+        }
+        .links-wrapper {
+            display: flex;
+            justify-content: flex-end;
+            color: $white;
+            gap: 5px;
+            margin-top: 20px;
+            @include respond(tab-port) {
+                justify-content: center;
+            }
+            a {
+                font-size: 12px;
+                text-decoration: underline;
+                font-weight: $light;
+                color: $white;
+                @include respond(tab-port) {
+                    text-align: center;
+                }
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
