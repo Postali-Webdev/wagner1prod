@@ -159,14 +159,15 @@ header {
                                     right:5px;
                                 }
                                 @include respond(tab-land) {
-                                    position: relative;
-                                    bottom: 0;
+                                    position: absolute;
+                                    bottom: 0 !important;
                                     content: "";
                                     left: 30px;
                                     width: calc(100% - 60px);
-                                    background: $blk;
+                                    background: #000;
                                     height: 1px;
                                     opacity: .2;
+                                    top: auto;
                                 }
                             }
                             &:not(.mega-menu) {
@@ -228,6 +229,8 @@ header {
                             text-transform: uppercase;
                             font-family: $merriweather;
                             letter-spacing: 0.88px;
+                            height: -webkit-fit-content;
+                            height: -moz-fit-content;
                             height: fit-content;
                             margin-bottom: 0 !important;
                             @include respond(desktop) {
@@ -323,6 +326,8 @@ header {
                                         left: -235px !important;
                                     }
                                     &>li {
+                                        width: -webkit-fit-content !important;
+                                        width: -moz-fit-content !important;
                                         width: fit-content !important;
                                         line-height: 25px !important;
                                         &>a {
@@ -428,6 +433,8 @@ header {
                                                 }
                                                 &.all-pa-link {
                                                     position: absolute;
+                                                    width: -webkit-fit-content;
+                                                    width: -moz-fit-content;
                                                     width: fit-content;
                                                     bottom: 20px;
                                                     right: 20px;
