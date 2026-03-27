@@ -971,3 +971,15 @@ section {
 }
 
 @import url(/wp-content/plugins/gravityforms/assets/css/dist/gravity-forms-theme-foundation.min.css);
+
+.gform_wrapper.gravity-theme .gform_fields input {
+    padding: 10px !important;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.gform_wrapper.gravity-theme .gform_fields .ginput_container_textarea textarea {
+    min-height: calc(100% - 13px) !important;
+    height: calc(100% - 13px) !important;
+    width: 100%;
+}
