@@ -983,3 +983,7 @@ section {
     height: calc(100% - 13px) !important;
     width: 100%;
 }
+
+.gform_wrapper.gravity-theme .gform_fields select {
+    width: 100%;
+}
