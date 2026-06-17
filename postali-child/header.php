@@ -32,70 +32,9 @@
         echo '<script type="application/ld+json">' . $single_schema . '</script>';
     endif; ?>
 
-<link rel="preload" href="/wp-content/themes/postali-child/assets/fonts/icomoon.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-<link rel="preload" href="/wp-content/themes/postali-child/assets/fonts/kanit/Kanit-Thin.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-<link rel="preload" href="/wp-content/themes/postali-child/assets/fonts/kanit/Kanit-ExtraLight.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-<link rel="preload" href="/wp-content/themes/postali-child/assets/fonts/kanit/Kanit-Light.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-<link rel="preload" href="/wp-content/themes/postali-child/assets/fonts/kanit/Kanit-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-<link rel="preload" href="/wp-content/themes/postali-child/assets/fonts/kanit/Kanit-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-<link rel="preload" href="/wp-content/themes/postali-child/assets/fonts/kanit/Kanit-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-<link rel="preload" href="/wp-content/themes/postali-child/assets/fonts/kanit/Kanit-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-<link rel="preload" href="/wp-content/themes/postali-child/assets/fonts/kanit/Kanit-ExtraBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-<link rel="preload" href="/wp-content/themes/postali-child/assets/fonts/kanit/Kanit-Black.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-<link rel="preload" href="/wp-content/themes/postali-child/assets/fonts/kanit/Kanit-ThinItalic.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-<link rel="preload" href="/wp-content/themes/postali-child/assets/fonts/kanit/Kanit-ExtraLightItalic.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-<link rel="preload" href="/wp-content/themes/postali-child/assets/fonts/kanit/Kanit-LightItalic.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-<link rel="preload" href="/wp-content/themes/postali-child/assets/fonts/kanit/Kanit-Italic.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-<link rel="preload" href="/wp-content/themes/postali-child/assets/fonts/kanit/Kanit-MediumItalic.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-<link rel="preload" href="/wp-content/themes/postali-child/assets/fonts/kanit/Kanit-SemiBoldItalic.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-<link rel="preload" href="/wp-content/themes/postali-child/assets/fonts/kanit/Kanit-BoldItalic.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-<link rel="preload" href="/wp-content/themes/postali-child/assets/fonts/kanit/Kanit-ExtraBoldItalic.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-<link rel="preload" href="/wp-content/themes/postali-child/assets/fonts/kanit/Kanit-BlackItalic.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-<link rel="preload" href="/wp-content/themes/postali-child/assets/fonts/merriweather-sans/MerriweatherSans-Light.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-<link rel="preload" href="/wp-content/themes/postali-child/assets/fonts/merriweather-sans/MerriweatherSans-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-<link rel="preload" href="/wp-content/themes/postali-child/assets/fonts/merriweather-sans/MerriweatherSans-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-<link rel="preload" href="/wp-content/themes/postali-child/assets/fonts/merriweather-sans/MerriweatherSans-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-<link rel="preload" href="/wp-content/themes/postali-child/assets/fonts/merriweather-sans/MerriweatherSans-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-<link rel="preload" href="/wp-content/themes/postali-child/assets/fonts/merriweather-sans/MerriweatherSans-ExtraBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-<link rel="preload" href="/wp-content/themes/postali-child/assets/fonts/merriweather-sans/MerriweatherSans-LightItalic.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-<link rel="preload" href="/wp-content/themes/postali-child/assets/fonts/merriweather-sans/MerriweatherSans-Italic.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-<link rel="preload" href="/wp-content/themes/postali-child/assets/fonts/merriweather-sans/MerriweatherSans-MediumItalic.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-<link rel="preload" href="/wp-content/themes/postali-child/assets/fonts/merriweather-sans/MerriweatherSans-SemiBoldItalic.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-<link rel="preload" href="/wp-content/themes/postali-child/assets/fonts/merriweather-sans/MerriweatherSans-BoldItalic.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-<link rel="preload" href="/wp-content/themes/postali-child/assets/fonts/merriweather-sans/MerriweatherSans-ExtraBoldItalic.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-
-<link rel="stylesheet" href="/wp-content/themes/postali-child/assets/fonts/icomoon.woff2">
-<link rel="stylesheet" href="/wp-content/themes/postali-child/assets/fonts/kanit/Kanit-Thin.woff2">
-<link rel="stylesheet" href="/wp-content/themes/postali-child/assets/fonts/kanit/Kanit-ExtraLight.woff2">
-<link rel="stylesheet" href="/wp-content/themes/postali-child/assets/fonts/kanit/Kanit-Light.woff2">
-<link rel="stylesheet" href="/wp-content/themes/postali-child/assets/fonts/kanit/Kanit-Regular.woff2">
-<link rel="stylesheet" href="/wp-content/themes/postali-child/assets/fonts/kanit/Kanit-Medium.woff2">
-<link rel="stylesheet" href="/wp-content/themes/postali-child/assets/fonts/kanit/Kanit-SemiBold.woff2">
-<link rel="stylesheet" href="/wp-content/themes/postali-child/assets/fonts/kanit/Kanit-Bold.woff2">
-<link rel="stylesheet" href="/wp-content/themes/postali-child/assets/fonts/kanit/Kanit-ExtraBold.woff2">
-<link rel="stylesheet" href="/wp-content/themes/postali-child/assets/fonts/kanit/Kanit-Black.woff2">
-<link rel="stylesheet" href="/wp-content/themes/postali-child/assets/fonts/kanit/Kanit-ThinItalic.woff2">
-<link rel="stylesheet" href="/wp-content/themes/postali-child/assets/fonts/kanit/Kanit-ExtraLightItalic.woff2">
-<link rel="stylesheet" href="/wp-content/themes/postali-child/assets/fonts/kanit/Kanit-LightItalic.woff2">
-<link rel="stylesheet" href="/wp-content/themes/postali-child/assets/fonts/kanit/Kanit-Italic.woff2">
-<link rel="stylesheet" href="/wp-content/themes/postali-child/assets/fonts/kanit/Kanit-MediumItalic.woff2">
-<link rel="stylesheet" href="/wp-content/themes/postali-child/assets/fonts/kanit/Kanit-SemiBoldItalic.woff2">
-<link rel="stylesheet" href="/wp-content/themes/postali-child/assets/fonts/kanit/Kanit-BoldItalic.woff2">
-<link rel="stylesheet" href="/wp-content/themes/postali-child/assets/fonts/kanit/Kanit-ExtraBoldItalic.woff2">
-<link rel="stylesheet" href="/wp-content/themes/postali-child/assets/fonts/kanit/Kanit-BlackItalic.woff2">
-<link rel="stylesheet" href="/wp-content/themes/postali-child/assets/fonts/merriweather-sans/MerriweatherSans-Light.woff2">
-<link rel="stylesheet" href="/wp-content/themes/postali-child/assets/fonts/merriweather-sans/MerriweatherSans-Regular.woff2">
-<link rel="stylesheet" href="/wp-content/themes/postali-child/assets/fonts/merriweather-sans/MerriweatherSans-Medium.woff2">
-<link rel="stylesheet" href="/wp-content/themes/postali-child/assets/fonts/merriweather-sans/MerriweatherSans-SemiBold.woff2">
-<link rel="stylesheet" href="/wp-content/themes/postali-child/assets/fonts/merriweather-sans/MerriweatherSans-Bold.woff2">
-<link rel="stylesheet" href="/wp-content/themes/postali-child/assets/fonts/merriweather-sans/MerriweatherSans-ExtraBold.woff2">
-<link rel="stylesheet" href="/wp-content/themes/postali-child/assets/fonts/merriweather-sans/MerriweatherSans-LightItalic.woff2">
-<link rel="stylesheet" href="/wp-content/themes/postali-child/assets/fonts/merriweather-sans/MerriweatherSans-Italic.woff2">
-<link rel="stylesheet" href="/wp-content/themes/postali-child/assets/fonts/merriweather-sans/MerriweatherSans-MediumItalic.woff2">
-<link rel="stylesheet" href="/wp-content/themes/postali-child/assets/fonts/merriweather-sans/MerriweatherSans-SemiBoldItalic.woff2">
-<link rel="stylesheet" href="/wp-content/themes/postali-child/assets/fonts/merriweather-sans/MerriweatherSans-BoldItalic.woff2">
-<link rel="stylesheet" href="/wp-content/themes/postali-child/assets/fonts/merriweather-sans/MerriweatherSans-ExtraBoldItalic.woff2">
-
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
