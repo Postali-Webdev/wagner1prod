@@ -90,43 +90,43 @@ if ( $child_query->have_posts()) {
 } else {
     $related_posts_query = $sibling_query;
 }
+?>
 
-
-if ( $related_posts_query->have_posts() ) : ?>
 <section id="panel-3" class="navy-bg">
     <div class="container">
         <div class="columns">
-            <div class="column-50">
+            <div class="block <?php echo $related_posts_query->have_posts() ? 'column-50' : 'column-full'; ?>">
                 <h2><?php echo esc_html( get_field('p3_section_title') ); ?></h2>
                 <?php echo acf_esc_html( get_field('p3_copy') ); ?>
             </div>
 
-            <div class="column-50 block">
+            <?php if ( $related_posts_query->have_posts() ) : ?>
+                <div class="column-50 block">
 
-                <p class="yellow-subtitle">Related Topics</p>
-                <div class="related-topics">
-                    <?php 
-                        while ( $related_posts_query->have_posts() ) {
-                            $related_posts_query->the_post(); ?>
-                            <a href="<?php the_permalink(); ?>" class="practice-area"><?php echo get_field('short_title'); ?></a>
-                        <?php }
-                        wp_reset_postdata();
-
-                        if ( $child_query->have_posts() && $child_count < 3 && $sibling_query->have_posts()) {
-                            $sibling_args['posts_per_page'] = 3 - $child_count;
-                            $sibling_query = new WP_Query( $sibling_args );
-                            while ( $sibling_query->have_posts() ) {
-                                $sibling_query->the_post(); ?>
+                    <p class="yellow-subtitle">Related Topics</p>
+                    <div class="related-topics">
+                        <?php 
+                            while ( $related_posts_query->have_posts() ) {
+                                $related_posts_query->the_post(); ?>
                                 <a href="<?php the_permalink(); ?>" class="practice-area"><?php echo get_field('short_title'); ?></a>
-                            <?php } wp_reset_postdata();
-                        }
-                    ?>
+                            <?php }
+                            wp_reset_postdata();
+
+                            if ( $child_query->have_posts() && $child_count < 3 && $sibling_query->have_posts()) {
+                                $sibling_args['posts_per_page'] = 3 - $child_count;
+                                $sibling_query = new WP_Query( $sibling_args );
+                                while ( $sibling_query->have_posts() ) {
+                                    $sibling_query->the_post(); ?>
+                                    <a href="<?php the_permalink(); ?>" class="practice-area"><?php echo get_field('short_title'); ?></a>
+                                <?php } wp_reset_postdata();
+                            }
+                        ?>
+                    </div>
                 </div>
-            </div>
+            <?php endif; ?>
         </div>
     </div>
 </section>
-<?php endif; ?>
 
 <section id="panel-4">
     <div class="container">
